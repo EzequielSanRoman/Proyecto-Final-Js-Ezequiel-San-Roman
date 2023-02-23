@@ -4,16 +4,17 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     background-image: linear-gradient(to right top, #0a6cff, #00a4ff, #00c8ea, #00e188, #a8eb12);
 }
 
-.nav-body{
+.nav-body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +26,7 @@ body{
     height: 90vh;
     display: flex;
     justify-content: space-around;
-    transition:  all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .welcome-back {
@@ -43,7 +44,7 @@ body{
     padding: 1rem 0;
 }
 
-.message button{
+.message button {
     padding: 1rem;
     font-weight: 400;
     background-image: linear-gradient(to right top, #ff8500, #f89600, #f1a600, #e9b50d, #e0c323, #dfc728, #decc2d, #ddd032, #e4cd28, #ebca1e, #f2c711, #f9c300);
@@ -71,10 +72,7 @@ body{
     border-radius: 35px;
 }
 
-.create-account {
-    padding: 2.7rem 0;
-    font-size: 1.7rem;
-}
+
 
 .iconos {
     width: 200px;
@@ -90,6 +88,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
+    margin: 1rem;
     border: solid thin white;
     border-radius: 50%;
     font-size: 1.5rem;
@@ -106,7 +105,7 @@ body{
 }
 
 .formulario input {
-    width: 70%;
+    width: 80%;
     display: block;
     margin: auto;
     margin-bottom: 2rem;
@@ -115,69 +114,18 @@ body{
     border-bottom: white thin solid;
     text-align: center;
     outline: none;
-    padding: .2rem 0;
+    padding: .5rem;
     font-size: .9rem;
     color: white;
 }
 
-.formulario-sign-up input[type="button"] {
-    width: 60%;
-    margin: auto;
-    border: solid thin white;
-    padding: .7rem;
-    border-radius: 2rem;
-    background-color: white;
-    font-weight: 600;
-    margin-top: 3rem;
-    font-size: .8rem;
-    cursor: pointer;
-    color: #222;
-}
-
-.sign-in {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.sign-in.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.sign-up.active {
-    opacity: 0;
-    visibility: hidden;
-}
-
-/* sign-up*/
-.notify{
-    width: 100%;
-    position: absolute;
-    top: 270px;
-    padding: 0.5rem;
-    text-align: center;
-    color: black;
-    display: none;
-}
-.check_notify{
-    background-color: rgb(6, 245, 6);
-}
-.check_notify.active{
-    display: block;
-}
-.error_notify{
-background-color: #ff0000;
-}
-.error_notify.active{
-    display: block;
-}
 /*Login*/
-#logint{
+#logint {
     display: none;
     background-color: red;
 }
-.logout{
+
+.logout {
     background-color: greenyellow;
     border-radius: 20px;
     display: none;
@@ -186,37 +134,32 @@ background-color: #ff0000;
 }
 
 /* cuentas */
-#perfil-access{
+
+#perfil-access {
     display: none;
 }
-.container-cuentas{
-    margin: 30px;
-}
-.border-cuentas {
-    justify-content: center;
-    border-radius: 80px;
-    background-color: transparent;
+
+.cuentas {
+    background-color: greenyellow;
+    border-radius: 100px;
+    display: flex;
     align-items: center;
-    
+    justify-content: center;
+    justify-content: space-around;
+    margin: 50px;
+
 }
 
-.caja-de-ahorro{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    background-color: rgb(255, 256, 0.602);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 0 30px 0 30px;
-    
+.productosBancarios {
+    background-color: rgb(0, 119, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center space-around;
+    margin: 60px;
+    padding: 15px;
 }
-.cuenta-corriente{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    background-color: rgb(255, 256, 0.602);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 0 30px 0 30px;
-}
+
 .contactanos-informacion {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -224,74 +167,71 @@ background-color: #ff0000;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
-.contactanos{
+
+.contactanos {
     padding: 40px;
 }
 
-.background1-left-column{
+.background1-left-column {
     background-color: linear-gradient(100deg, #21c8f6, rgb(199, 199, 199));
 }
 
-.background1-left-column{
+.background1-left-column {
     background-color: linear-gradient(100deg, #2196f6, rgb(156, 156, 156));
 }
 
-.iconos-redes{
+.iconos-redes {
     font-size: 25px;
-    color:rgb(156, 156, 156);
+    color: rgb(156, 156, 156);
     font-weight: bold;
 }
+
 /*HEADER*/
 
 header .barra-menu {
     border-radius: 80px;
     margin: 30px 30px 30px 30px;
-  }
-  header nav div .logo {
+}
+
+header nav div .logo {
     width: 150px;
     height: 150px;
-  }
+}
 
-.logo-marmol{
+.logo-marmol {
     justify-content: left;
     margin-right: 60px;
     height: 125px;
     height: 125px;
-  }
-  footer .barra-menu{
+}
+
+footer .barra-menu {
     border-radius: 80px;
-     margin: 30px 30px 70px 30px;
-  }
-  
+    margin: 30px 30px 70px 30px;
+}
 
+/* index.html */
+nav {
+    position: center;
+    height: 40%;
+    padding: 5px 40px 5px 40px;
+}
 
+nav .carrusel {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
 
-  /* Home.html */
-  
-    nav {
-      position: center;
-      height: 40%;
-      padding: 5px 40px 5px 40px;
-     
-    }
-
-    nav .carrusel {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-     
- 
-    }
-  .swiper {
+.swiper {
     width: 75%;
     height: 75%;
     border-radius: 10px;
     shadow: 5px;
-    
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -309,18 +249,17 @@ header .barra-menu {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-
-  /*App*/
-  .app-100 {
+/*App*/
+.app-100 {
     font-size: 130px;
     font-family: 'Anton', sans-serif;
     font-style: italic;
@@ -330,16 +269,15 @@ header .barra-menu {
     font-family: 'Anton', sans-serif;
     font-size: 180px;
     font-style: italic;
-
 }
 
-.container-app{
+.container-app {
     width: 100%;
     display: flex;
     max-width: 1100px;
-    
 }
-.card-app{
+
+.card-app {
     width: 100%;
     margin: 20px;
     border-radius: 15px;
@@ -349,32 +287,34 @@ header .barra-menu {
     transition: all 400ms ease;
     background-image: linear-gradient(to top, #ffb100, #c1d136, #7ee57d, #2bf0c5, #00f4ff);
 }
-.card-app:hover{
+
+.card-app:hover {
     box-shadow: 5px 5px 20px rgb(0, 0, 0, 9);
     transform: translateY(-3%);
 }
 
-.card-app img{
+.card-app img {
     width: 100%;
     height: 160px;
 }
 
-.card-app .contenido{
+.card-app .contenido {
     padding: 14px;
     text-align: center;
-
 }
 
-.card-app .contenido p{
+.card-app .contenido p {
     line-height: 1.5;
     color: #6a6a6a;
 }
-.card-app .contenido h2{
+
+.card-app .contenido h2 {
     font-weight: 400;
     margin-bottom: 15px;
     font-size: 22px;
 }
-.card-app .contenido a{
+
+.card-app .contenido a {
     text-decoration: none;
     display: inline-block;
     padding: 10px;
@@ -385,7 +325,7 @@ header .barra-menu {
     transition: all 400ms ease;
 }
 
-.card-app .contenido a:hover{
+.card-app .contenido a:hover {
     background-color: #2fb4cc;
     color: #fff;
 }
